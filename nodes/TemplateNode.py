@@ -11,8 +11,12 @@ class TemplateNode(udi_interface.Node):
         self.address = address
 
         self.poly.addNode(self, conn_status='ST')
+
+        self.poly.subscribe(self.poly.START, self.startHandler)
         LOGGER.info('Template Node Initialized')
 
+    def startHandler(self):
+        self.query()
     def query(self, command=None):
         LOGGER.info("Starting Template Device Query")
         self.discover()

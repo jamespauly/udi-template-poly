@@ -26,10 +26,10 @@ class TemplateController(udi_interface.Node):
         for node in self.poly.getNodes():
             LOGGER.debug('Listing Nodes: ' + node)
 
-        if self.poly.getNode('tn123456') is None:
+        if self.poly.getNode(node_address) is None:
             LOGGER.info("Adding Node {}".format(node_address))
             self.poly.addNode(
-                TemplateNode(self.poly, self.address, node_address, node_name))
+                TemplateNode(self.poly, node_address, node_address, node_name))
         else:
             template_node = self.poly.getNode(node_address)
             template_node.query()
