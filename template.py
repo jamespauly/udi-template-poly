@@ -55,14 +55,14 @@ if __name__ == "__main__":
         polyglot.updateProfile()
 
         # Create the controller node
-        template_controller = TemplateController(polyglot, 'controller', 'controller', 'Template Controller', ewelink_interface)
+        template_controller = TemplateController(polyglot, 'controller', 'controller', 'Template Controller')
 
         # subscribe to the events we want
         polyglot.subscribe(polyglot.POLL, pollHandler)
         polyglot.subscribe(polyglot.STOP, stopHandler)
         # polyglot.subscribe(polyglot.CUSTOMDATA, ewelink_interface.customDataHandler)
         # polyglot.subscribe(polyglot.CUSTOMNS, ewelink_interface.customNsHandler)
-        polyglot.subscribe(polyglot.CUSTOMPARAMS, ewelink_interface.customParamsHandler)
+        # polyglot.subscribe(polyglot.CUSTOMPARAMS, ewelink_interface.customParamsHandler)
         #polyglot.subscribe(polyglot.OAUTH, oauthHandler)
         polyglot.subscribe(polyglot.CONFIGDONE, configDoneHandler)
         # polyglot.subscribe(polyglot.ADDNODEDONE, addNodeDoneHandler)
