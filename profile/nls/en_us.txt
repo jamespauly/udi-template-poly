@@ -1,0 +1,17 @@
+# controller
+ND-template-NAME = Template NodeServer Controller
+ND-template-ICON = GenericCtl
+CMD-templatenls-DISCOVER-NAME = Discover
+ST-templatenls-ST-NAME = Template NodeServer Running
+
+# node
+ND-templatenode-NAME = Template Node
+ND-templatenode-ICON = GenericCtl
+CMD-templatenodenls-DISCOVER-NAME = Discover
+ST-templatenodenls-ST-NAME = Template Node
+
+# sub node
+ND-templatesubnode-NAME = Template Sub Node
+ND-templatesubnode-ICON = GenericCtl
+CMD-templatesubnodenls-DISCOVER-NAME = Discover
+ST-templatesubnodenls-ST-NAME = Template Sub Node

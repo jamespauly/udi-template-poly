@@ -1,0 +1,37 @@
+<nodeDefs>
+    <!-- NODE DEF from 5.0 document http://wiki.universal-devices.com/index.php?title=V50_MAIN -->
+    <!-- controller, this must mach the id in your Controller class-->
+    <nodeDef id="template" nls="templatenls">
+        <editors/>
+        <sts>
+            <st id="ST" editor="bool"/>
+        </sts>
+        <cmds>
+            <accepts>
+                <cmd id="DISCOVER"/>
+            </accepts>
+        </cmds>
+    </nodeDef>
+    <nodeDef id="templatenode" nls="templatenodenls">
+        <editors/>
+        <sts>
+            <st id="ST" editor="bool"/>
+        </sts>
+        <cmds>
+            <accepts>
+                <cmd id="DISCOVER"/>
+            </accepts>
+        </cmds>
+    </nodeDef>
+        <nodeDef id="templatesubnode" nls="templatesubnodenls">
+        <editors/>
+        <sts>
+            <st id="ST" editor="bool"/>
+        </sts>
+        <cmds>
+            <accepts>
+                <cmd id="DISCOVER"/>
+            </accepts>
+        </cmds>
+    </nodeDef>
+</nodeDefs>
